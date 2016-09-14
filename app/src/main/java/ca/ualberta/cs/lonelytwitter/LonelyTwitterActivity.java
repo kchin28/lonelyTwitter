@@ -65,7 +65,17 @@ public class LonelyTwitterActivity extends Activity {
                 tweetList.add(newTweet);
                 tweetList.add(newestImportantTweet);
 
+                /*
+                Mood annoyed_mood = new Mood();
+                annoyed_mood.returnCurrentMood();
 
+                Mood content_mood = new Mood();
+                content_mood.returnCurrentMood();
+
+                ImportantTweet.addMood(content_mood);
+                ImportantTweet.addMood(annoyed_mood);
+                */
+                
                 saveInFile(text, new Date(System.currentTimeMillis()));
 
                 finish();
