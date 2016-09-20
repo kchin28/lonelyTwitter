@@ -11,17 +11,18 @@ public abstract class Tweet {
     private Date date;
     private ArrayList<Mood> moodList = new ArrayList<Mood>();
 
-    //constructor
+    //overloaded constructor
     public Tweet(String message){
-        this.message=message;
+        this.message = message;
+        this.date = new Date();
     }
 
-    //overloaded constructor
     public Tweet(String message, Date date){
         this.message = message;
         this.date = date;
     }
 
+    //start methods
     public abstract Boolean isImportant();
 
     public void setMessage(String message) throws TweetTooLongException {
@@ -52,4 +53,9 @@ public abstract class Tweet {
             //System.out.println(moodList[i].returnCurrentMood());
         }
     }
-}
+
+    @Override
+    public String toString(){
+        return date.toString() + " | " + message ;
+    }
+}//end of tweet class
