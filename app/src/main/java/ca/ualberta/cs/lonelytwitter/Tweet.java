@@ -3,6 +3,7 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.ArrayList;
 import java.util.Date;
 
+
 /**
  * Created by Kelly on 2016-09-13.
  */
