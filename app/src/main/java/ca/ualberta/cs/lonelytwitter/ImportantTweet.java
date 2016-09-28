@@ -13,4 +13,14 @@ public class ImportantTweet extends Tweet{
         return Boolean.TRUE;
     }
 
+    public int compareTo(Tweet x){
+
+        if(this.getDate().before(x.getDate())){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+    }
+
 }//end of ImportantTweet class

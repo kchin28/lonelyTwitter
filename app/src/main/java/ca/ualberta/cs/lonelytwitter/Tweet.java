@@ -7,7 +7,7 @@ import java.util.Date;
 /**
  * Created by Kelly on 2016-09-13.
  */
-public abstract class Tweet {
+public abstract class Tweet implements Comparable<Tweet>{
     private String message;
     private Date date;
     private ArrayList<Mood> moodList = new ArrayList<Mood>();
@@ -59,4 +59,7 @@ public abstract class Tweet {
     public String toString(){
         return date.toString() + " | " + message ;
     }
+
+
+
 }//end of tweet class
