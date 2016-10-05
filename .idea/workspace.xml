@@ -14,19 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa95d443-cc4c-4c99-b957-c9e543851497" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/androidTest/java/ca/ualberta/cs/lonelytwitter/TweetListTest.java" afterPath="$PROJECT_DIR$/app/src/androidTest/java/ca/ualberta/cs/lonelytwitter/TweetListTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/AnnoyedMood.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/AnnoyedMood.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/ContentMood.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/ContentMood.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/ImportantTweet.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/ImportantTweet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/LonelyTwitterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/LonelyTwitterActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/NormalTweet.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/NormalTweet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/Tweet.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/Tweet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/TweetList.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/TweetList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/TweetTooLongException.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/TweetTooLongException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/Tweetable.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/Tweetable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/Mood.java" afterPath="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/Mood.java" />
     </list>
     <ignored path="lonelyTwitter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,47 +56,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TweetListTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TweetListTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/ca/ualberta/cs/lonelytwitter/TweetListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-1.3397341">
               <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TweetTooLongException.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/TweetTooLongException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.097488925">
-              <caret line="3" column="81" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -1770,7 +1725,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/Mood.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/package-info.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/LonelyTwitterActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/TweetList.java" />
@@ -1782,6 +1736,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/ContentMood.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/Tweetable.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/TweetTooLongException.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/Mood.java" />
       </list>
     </option>
   </component>
@@ -2302,7 +2257,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="0" width="2060" height="1120" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2323,7 +2278,7 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938644" sideWeight="0.49597585" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16800804" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16800804" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23573735" sideWeight="0.55935615" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2700,14 +2655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/Mood.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/ca/ualberta/cs/lonelytwitter/LonelyTwitterActivityTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2732,17 +2679,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/package-info.java">
@@ -2851,21 +2787,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/ca/ualberta/cs/lonelytwitter/TweetListTest.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/TweetTooLongException.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25997046">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+      <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/Mood.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74741507">
+          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ca/ualberta/cs/lonelytwitter/TweetTooLongException.java">
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/ca/ualberta/cs/lonelytwitter/TweetListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.097488925">
-          <caret line="3" column="81" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
-          <folding />
+        <state vertical-scroll-proportion="-1.3397341">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
