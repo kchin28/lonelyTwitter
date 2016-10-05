@@ -5,13 +5,22 @@ import android.test.ActivityInstrumentationTestCase2;
 import java.util.Date;
 
 /**
- * Created by Kelly on 2016-09-27.
+ * TweetListTest tests the functionality of TweetList.
  */
 public class TweetListTest extends ActivityInstrumentationTestCase2<LonelyTwitterActivity>{
+
+    /**
+     * This constructor takes an instance of the LonelyTwitterActivity class and passes it to
+     * the parent's constructor.
+     * @see ActivityInstrumentationTestCase2
+     */
     public TweetListTest(){
         super(LonelyTwitterActivity.class);
     }
 
+    /**
+     * Tests Adding a tweet to the list.
+     */
     public void testAddTweet(){
         TweetList list = new TweetList();
 
@@ -21,6 +30,9 @@ public class TweetListTest extends ActivityInstrumentationTestCase2<LonelyTwitte
 
     }
 
+    /**
+     * Tests if TweetList can properly decide if it contains a particular tweet.
+     */
     public void testHasTweet(){
         TweetList list = new TweetList();
         Tweet tweet = new NormalTweet("Hello!");

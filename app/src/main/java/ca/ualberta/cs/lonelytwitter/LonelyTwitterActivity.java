@@ -1,3 +1,11 @@
+/*
+Copyright (c) 2016 Team 20, CMPUT 301, University of Alberta - All Rights Reserved.
+You may use, distribute, and copy all or poarts of this code under terms and conditions of
+University of Alberta and the Code of Student Behavior.
+You can find a opy of the license at github.com/Team20
+For Further Information, contact ...
+ */
+
 package ca.ualberta.cs.lonelytwitter;
 
 import java.io.BufferedReader;
@@ -28,8 +36,21 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+/**
+ *This is the main view class of LonelyTwitter project. It handles all user interactions
+ * as well as file manipulations.
+ * <pre> All the files are stored in the form of "json" files stored in Emulator, accessible
+ * from Android Device Monitor.</pre>
+ *
+ */
+
 public class LonelyTwitterActivity extends Activity {
 
+    /**
+     * This is the file name that is being saved/loaded and contains all the tweets.
+     * @see #loadFromFile()
+     * @see #saveInFile()
+     */
     private static final String FILENAME = "file.sav";
     private EditText bodyText;
     private ListView oldTweetsList;
@@ -39,6 +60,8 @@ public class LonelyTwitterActivity extends Activity {
 
     /**
      * Called when the activity is first created.
+     * @param savedInstanceState This is an Android provided variable that provides extra
+     *                            information to the current activity.
      */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,6 +106,10 @@ public class LonelyTwitterActivity extends Activity {
 
     }
 
+    /**
+     * Called when the activity is being started up after being stopped. Such as when another activity
+     * needs to take up the entire screen.
+     */
     @Override
     protected void onStart() {
 
@@ -94,6 +121,12 @@ public class LonelyTwitterActivity extends Activity {
 
     }
 
+    /**
+     * This method loads the tweets from FILE_NAME and populates tweetList using Gson/json to implement
+     * persistent data .
+     * @throws FileNotFoundException
+     * @exception RuntimeException
+     */
     private void loadFromFile() {
 
         try {
@@ -118,6 +151,13 @@ public class LonelyTwitterActivity extends Activity {
 
     }
 
+    /**
+     * This method takes the tweetList and writes them to file to be saved locally on the emulator's
+     * disk using gson/json.
+     * @throws RuntimeException
+     * @exception  FileNotFoundException
+     */
+
     private void saveInFile() {
         try {
             FileOutputStream fos = openFileOutput(FILENAME,
@@ -139,6 +179,11 @@ public class LonelyTwitterActivity extends Activity {
         }
     }
 
+
+    /**
+     * onStop is called if another activity needs to take up the screen. No additional
+     * functionality is added to the inherited method.
+     */
     @Override
     public void onStop() {
         super.onStop();

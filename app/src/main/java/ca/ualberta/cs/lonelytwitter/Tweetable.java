@@ -3,7 +3,7 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 /**
- * Created by Kelly on 2016-09-13.
+ * An interface that allows tweets to display its own message and its creation date.
  */
 public interface Tweetable {
     public String getMessage();
