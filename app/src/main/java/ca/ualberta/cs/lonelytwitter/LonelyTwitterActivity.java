@@ -22,9 +22,11 @@ import java.util.Date;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,6 +36,7 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.gson.Gson;
+import com.google.gson.internal.bind.ReflectiveTypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
 
 /**
@@ -45,19 +48,22 @@ import com.google.gson.reflect.TypeToken;
  */
 
 public class LonelyTwitterActivity extends Activity {
-
+    private Activity activity = this;
     /**
      * This is the file name that is being saved/loaded and contains all the tweets.
      * @see #loadFromFile()
      * @see #saveInFile()
      */
+
     private static final String FILENAME = "file.sav";
     private EditText bodyText;
     private ListView oldTweetsList;
     private ArrayList<Tweet> tweetList = new ArrayList<Tweet>();
     private ArrayAdapter<Tweet> adapter;
 
-
+    public ListView getOldTweetsList(){
+        return oldTweetsList;
+    }
     /**
      * Called when the activity is first created.
      * @param savedInstanceState This is an Android provided variable that provides extra
@@ -103,6 +109,16 @@ public class LonelyTwitterActivity extends Activity {
                                           }
                                       }
         );
+
+        oldTweetsList.setOnItemClickListener(new
+                AdapterView.OnItemClickListener(){
+                    public void onItemClick(AdapterView<?> parent,View view, int position, long id){
+                        Intent intent = new Intent(activity,EditTweetActivity.class);
+                        intent.putExtra("Selected Tweet",tweetList.get(position).toString());
+                        startActivity(intent);
+                    }
+
+                });
 
     }
 
