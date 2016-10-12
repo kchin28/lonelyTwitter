@@ -48,33 +48,36 @@ public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2<
 
     }
 
-    public void testClickTweetList(){
+    public void testClickTweetList() {
         LonelyTwitterActivity activity = (LonelyTwitterActivity) solo.getCurrentActivity();
 
-        solo.assertCurrentActivity("Wrong Activity",LonelyTwitterActivity.class); //check if we are in the correct activity
+        solo.assertCurrentActivity("Wrong Activity", LonelyTwitterActivity.class); //check if we are in the correct activity
         solo.clickOnButton("Clear");
 
-        solo.enterText((EditText) solo.getView(R.id.body),"Test Tweet!"); //gets the edittext
+        solo.enterText((EditText) solo.getView(R.id.body), "Test Tweet!"); //gets the edittext
         solo.clickOnButton("Save"); //hit the save button
 
         solo.waitForText("Test Tweet!");
 
         final ListView oldTweetsList = activity.getOldTweetsList();
-        Tweet tweet = (Tweet)oldTweetsList.getItemAtPosition(0);
-        assertEquals("Test Tweet!",tweet.getMessage());
+        Tweet tweet = (Tweet) oldTweetsList.getItemAtPosition(0);
+        assertEquals("Test Tweet!", tweet.getMessage());
 
 
         solo.clickInList(0);
-        solo.assertCurrentActivity("Wrong Activity",EditTweetActivity.class); //check if we are in the correct activity
+        solo.assertCurrentActivity("Wrong Activity", EditTweetActivity.class); //check if we are in the correct activity
         TextView test = (TextView) solo.getView(R.id.EditTweetTextView);
         assertTrue(test.getText().toString().contains("Test Tweet!"));
 
-      //  assertTrue(solo.waitForText("Test Tweet!"));
+        //  assertTrue(solo.waitForText("Test Tweet!"));
 
-       // solo.goBack();
-      //  solo.assertCurrentActivity("Wrong Activity", LonelyTwitterActivity.class);
+        // solo.goBack();
+        //  solo.assertCurrentActivity("Wrong Activity", LonelyTwitterActivity.class);
 
         //tests are not guarenteed to run in the order that theyre written
     }
+        public void tearDown() throws Exception {
+            solo.finishOpenedActivities();
+        }
 
 }//end
